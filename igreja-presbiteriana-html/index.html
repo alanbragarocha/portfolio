@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igreja Presbiteriana</title>
+    <link rel="stylesheet" href="./assets/styles/root.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/agenda-section-new.css" />
+    <link rel="stylesheet" href="./assets/styles/eventos-responsivos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Igreja Presbiteriana - Uma comunidade comprometida com o ensino bíblico, a adoração sincera e o serviço ao próximo."
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="index.html">
+            <span>Igreja Presbiteriana</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#reforma">Reforma</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato"> Contato</a></li>
+            <li><a href="#ministerio">Ministérios</a></li>
+            <li><a href="escalas.html">Escalas</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Barra de próximos eventos no topo da página -->
+    <div class="proximos-eventos">
+      <div class="container">
+        <div class="eventos-slider">
+          <div class="evento-item">
+            <div class="evento-icone">
+              <i class="fas fa-users"></i>
+            </div>
+            <span>Escola Dominical: Domingo às 9h</span>
+          </div>
+          <div class="evento-item">
+            <div class="evento-icone">
+              <i class="fas fa-bible"></i>
+            </div>
+            <span>Culto: Domingo às 18h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Bem-vindo à Igreja Presbiteriana</h1>
+            <p>
+              Uma comunidade comprometida com o ensino bíblico, a adoração
+              sincera e o serviço ao próximo. Conheça nossa igreja e participe
+              dos nossos cultos e estudos bíblicos semanais.
+            </p>
+            <a href="#agenda" class="btn-primary">Nossos Cultos e Eventos</a>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./assets/imagens/capa igreja.jpg"
+              alt="Interior da Igreja Presbiteriana"
+              width="600"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Seção do Pastor -->
+      <section class="pastor-section" id="pastor">
+        <div class="container">
+          <div class="pastor-container">
+            <div class="pastor-imagem">
+              <div class="pastor-foto-oval">
+                <img
+                  src="./assets/imagens/Pastor.webp"
+                  alt="Rev. Lucas"
+                  width="400"
+                  height="400"
+                />
+              </div>
+            </div>
+
+            <div class="pastor-conteudo">
+              <div class="pastor-info">
+                <h3>Rev. Lucas</h3>
+                <p class="pastor-bio">
+                  Nascido em 1962, é mineiro, criado no Rio de Janeiro e mora em
+                  Macaé desde 1996. É casado com Martha Morett, que é médica
+                  psiquiatra infantil. Eles têm quatro filhos: Ana Clara, Ana
+                  Luíza, Ana Alícia e Davi.
+                </p>
+                <p class="pastor-bio">
+                  O pastor Lucas é Bacharel em teologia pelo Seminário Teológico
+                  Betel, no Rio de Janeiro. Pastoreou a Segunda Igreja
+                  Presbiteriana por onze anos, antes de fundar a Igreja
+                  Presbiteriana, há 14 anos.
+                </p>
+                <div class="pastor-acoes">
+                  <a href="./pastor.html" class="btn-primary"
+                    >Conheça Minha Trajetória</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seção de Reformadores -->
+      <section class="reforma-section" id="reforma">
+        <div class="container">
+          <h2 class="section-title">figuras históricas</h2>
+          <p class="section-description">
+            Conheça algumas das figuras históricas mais importantes para a
+            teologia reformada e a Igreja Presbiteriana.
+          </p>
+
+          <div class="card-grid">
+            <!-- Card do Martinho Lutero -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/imagens/martinho lutero.svg"
+                  alt="Martinho Lutero"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Martinho Lutero</h3>
+                <p>
+                  Monge alemão e professor de teologia que iniciou a Reforma
+                  Protestante no século XVI, quando publicou suas 95 teses
+                  contra as indulgências.
+                </p>
+                <a href="./lutero.html" class="btn-primary">Saiba mais</a>
+              </div>
+            </div>
+
+            <!-- Card do João Calvino -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/imagens/João Calvino.svg"
+                  alt="João Calvino"
+                />
+              </div>
+              <div class="card-content">
+                <h3>João Calvino</h3>
+                <p>
+                  Teólogo francês cuja interpretação sistemática das doutrinas
+                  bíblicas formou a base teológica do presbiterianismo e outras
+                  denominações reformadas.
+                </p>
+                <a href="./calvino.html" class="btn-primary">Saiba mais</a>
+              </div>
+            </div>
+
+            <!-- Card do Ashbel Green Simonton -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="/assets/imagens/Ashbel Green Simonton.svg"
+                  alt="Ashbel Green Simonton"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Ashbel Green Simonton</h3>
+                <p>
+                  Missionário norte-americano que fundou a Igreja Presbiteriana
+                  no Brasil em 1859, iniciando o trabalho presbiteriano em nosso
+                  país.
+                </p>
+                <a href="./ashbel.html" class="btn-primary">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Agenda -->
+      <section class="agenda-section" id="agenda">
+        <div class="container">
+          <h2 class="section-title">Nossa Agenda</h2>
+          <p class="section-description">
+            Confira os principais eventos e atividades da nossa igreja.
+            Participe e cresça em comunhão!
+          </p>
+
+          <!-- Container de eventos que será preenchido dinamicamente pelo JS -->
+          <div class="eventos-container">
+            <!-- Os eventos serão inseridos aqui dinamicamente via JavaScript -->
+          </div>
+
+          <div class="calendario-btn">
+            <a href="#" class="btn-primary"
+              >Ver Calendário Completo <i class="fas fa-calendar-alt"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Ministério -->
+      <section class="ministerio" id="ministerio">
+        <div class="container">
+          <h2 class="section-title">Ministério</h2>
+          <p class="section-subtitle">
+            Conheça o chamado e a visão ministerial que orienta meu trabalho e
+            serviço à comunidade de fé.
+          </p>
+
+          <div class="ministerio-container">
+            <!-- Visão e Missão -->
+            <div class="ministerio-visao">
+              <div class="ministerio-header">
+                <div class="ministerio-icon">
+                  <i class="fas fa-church" aria-hidden="true"></i>
+                </div>
+                <h3>Visão e Missão</h3>
+              </div>
+              <p>
+                Descrição da visão ministerial e propósito do trabalho,
+                abordando os valores espirituais que norteiam a atuação e o
+                impacto desejado na comunidade. Esta área permite compartilhar a
+                essência do chamado que inspira seu ministério.
+              </p>
+              <p>
+                Detalhamento sobre como essa visão se materializa na prática,
+                por meio de projetos e iniciativas concretas que buscam
+                transformar vidas e fortalecer a fé das pessoas.
+              </p>
+            </div>
+
+            <!-- Áreas de Atuação -->
+            <div class="ministerio-atuacao">
+              <div class="ministerio-areas">
+                <article class="area-item">
+                  <div class="area-icon">
+                    <i class="fas fa-pray" aria-hidden="true"></i>
+                  </div>
+                  <h4>Aconselhamento</h4>
+                  <p>
+                    Acompanhamento pastoral para momentos de crise, decisões
+                    importantes e crescimento espiritual, oferecendo suporte
+                    baseado em princípios bíblicos e sabedoria prática.
+                  </p>
+                </article>
+
+                <article class="area-item">
+                  <div class="area-icon">
+                    <i class="fas fa-book-open" aria-hidden="true"></i>
+                  </div>
+                  <h4>Ensino Bíblico</h4>
+                  <p>
+                    Estudos bíblicos aprofundados e contextualização das
+                    escrituras para aplicação na vida contemporânea, facilitando
+                    a compreensão e vivência da fé.
+                  </p>
+                </article>
+
+                <article class="area-item">
+                  <div class="area-icon">
+                    <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                  </div>
+                  <h4>Ação Social</h4>
+                  <p>
+                    Projetos e iniciativas voltadas ao serviço comunitário e
+                    apoio aos mais vulneráveis, colocando em prática os valores
+                    de amor e solidariedade cristã.
+                  </p>
+                </article>
+
+                <article class="area-item">
+                  <div class="area-icon">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                  </div>
+                  <h4>Formação de Líderes</h4>
+                  <p>
+                    Mentoria e capacitação para o desenvolvimento de novos
+                    líderes, preparando-os para multiplicar o impacto positivo
+                    na comunidade de fé e na sociedade.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seção do Mapa -->
+      <section class="map-section" id="localizacao">
+        <div class="container">
+          <h2 class="section-title">Como Chegar</h2>
+          <p class="section-description">
+            Veja nossa localização no mapa e venha nos visitar!
+          </p>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29512.811944825942!2d-41.773374!3d-22.387531!3m2!1i1024!2i768!4f0.3!3m3!1m2!1s0x9631c0373e172d%3A0xe6fe495776898699!2sIgreja%20Presbiteriana!5e0!3m2!1spt-BR!2sbr!4v1725386128145!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="dizimos-ofertas" id="dizimos-ofertas">
+        <div class="container">
+          <h2 class="section-title">Dízimos e Ofertas</h2>
+          <p class="section-description">
+            Contribua para nossa obra através dos canais abaixo
+          </p>
+
+          <div class="dizimos-container">
+            <div class="dizimo-metodo">
+              <h3>Transferência Bancária</h3>
+              <div class="dados-bancarios">
+                <p>
+                  <strong>Banco:</strong>
+                  <span id="banco-nome">Carregando...</span>
+                </p>
+                <!-- <p><strong>Agência:</strong> <span id="banco-agencia">Carregando...</span></p>-->
+                <p>
+                  <strong>Conta:</strong>
+                  <span id="banco-conta">Carregando...</span>
+                </p>
+                <p>
+                  <strong>Titular:</strong>
+                  <span id="banco-titular">Carregando...</span>
+                </p>
+                <p>
+                  <strong>CNPJ:</strong>
+                  <span id="banco-cnpj">Carregando...</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="dizimo-metodo pix-container">
+              <h3>PIX</h3>
+              <div class="qrcode-container">
+                <div class="qrcode">
+                  <!-- <img id="pix-qrcode" src="./assets/imagens/qr-code-pix.svg" alt="QR Code para PIX" />-->
+                </div>
+              </div>
+              <div class="pix-info">
+                <p>
+                  <strong>Chave PIX:</strong>
+                  <span id="pix-key">Carregando...</span>
+                </p>
+                <p>
+                  <strong>Tipo:</strong>
+                  <span id="pix-tipo">Carregando...</span>
+                </p>
+                <button class="btn-primary copy-button" onclick="copyPixKey()">
+                  Copiar Chave PIX
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="contato" class="container footer-container">
+        <!-- Seção 1: Logo e Sobre -->
+        <div class="footer-section">
+          <div class="footer-logo">
+            <h3>Igreja Presbiteriana</h3>
+          </div>
+          <p>
+            Uma comunidade de fé comprometida com a Palavra de Deus, adoração
+            verdadeira e crescimento espiritual, fundamentada nos princípios da
+            Reforma Protestante.
+          </p>
+          <p><em>"Tudo para a glória de Deus" - 1 Coríntios 10:31</em></p>
+        </div>
+
+        <!-- Seção 2: Horários dos Cultos -->
+        <div class="footer-section">
+          <h4>Nossos Cultos</h4>
+          <div class="footer-horarios">
+            <p><strong>Culto Dominical:</strong> Domingo às 10h e 18h</p>
+            <p><strong>Escola Dominical:</strong> Domingo às 9h</p>
+            <p><strong>Estudo Bíblico:</strong> Quarta às 19h30</p>
+            <p><strong>Culto de Oração:</strong> Sexta às 19h</p>
+            <p><strong>Reunião de Jovens:</strong> Sábado às 19h</p>
+          </div>
+        </div>
+
+        <!-- Seção 3: Contato e Horários -->
+        <div class="footer-section">
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <p>
+              <strong>Endereço:</strong> Rua XXXX, nº XXX - Bairro, Macaé - RJ
+            </p>
+            <p><strong>Telefone:</strong> (22) XXXX-XXXX</p>
+            <p><strong>Email:</strong> contato@ipmacae.com.br</p>
+          </div>
+
+          <div class="footer-social">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" aria-label="Spotify">
+                <i class="fab fa-spotify"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <p>&copy; 2025 Igreja Presbiteriana. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/pix.js"></script>
+    <script src="./assets/js/atualizador-conteudo-dinamico.js"></script>
+    <script>
+      // Script para o menu mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuToggle) {
+          menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            this.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

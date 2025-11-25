@@ -1,0 +1,152 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-info {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-info .logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer-info .script-font {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.footer-info .tagline {
+  font-size: 0.8rem;
+  color: var(--gray);
+  letter-spacing: 1px;
+}
+
+.footer-desc {
+  margin-bottom: 1rem;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.social-link:hover {
+  background-color: var(--primary);
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section ul li a {
+  color: var(--light);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary);
+}
+
+.hours-list li,
+.contact-list li {
+  color: var(--gray-light);
+}
+
+.footer-bottom {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+/* Responsivo */
+@media screen and (min-width: 768px) {
+  .footer-info {
+    flex: 0 0 35%;
+    max-width: 35%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .footer-links {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .footer-section {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 0;
+  }
+
+  .footer-desc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

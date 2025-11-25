@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="unload=(), beforeunload=()"
+    />
+    <meta
+      name="description"
+      content="Conheça a história, valores e equipe da ConsultPro. Uma empresa com mais de 10 anos de experiência em consultoria empresarial de alta qualidade."
+    />
+    <meta
+      name="keywords"
+      content="sobre consultpro, história consultoria, quem somos, valores empresariais, equipe de consultores, consultoria especializada"
+    />
+    <meta name="author" content="ConsultPro" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Sobre Nós | ConsultPro" />
+    <meta
+      property="og:description"
+      content="Conheça nossa trajetória, valores e a equipe por trás do sucesso da ConsultPro."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://consultpro.com.br/sobre" />
+    <meta
+      property="og:image"
+      content="https://consultpro.com.br/assets/img/og-image.jpg"
+    />
+    <title>Sobre Nós | ConsultPro</title>
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/servicos.css" />
+    <link rel="canonical" href="https://consultpro.com.br/sobre" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: var(--cor-primaria);
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 40px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 50%;
+      }
+
+      .timeline-item:nth-child(even) {
+        align-self: flex-end;
+        justify-content: flex-start;
+        margin-left: auto;
+      }
+
+      .timeline-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: var(--sombra-suave);
+        position: relative;
+        width: 100%;
+        border-left: 5px solid var(--cor-primaria);
+      }
+
+      .timeline-item:nth-child(even) .timeline-content {
+        border-left: none;
+        border-right: 5px solid var(--cor-primaria);
+      }
+
+      .timeline-date {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+        background: linear-gradient(
+          135deg,
+          var(--cor-primaria),
+          var(--cor-secundaria)
+        );
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 600;
+      }
+
+      .timeline-content h3 {
+        color: var(--cor-primaria);
+        margin-bottom: 15px;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        top: 30px;
+        right: -13px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: var(--cor-secundaria);
+        border: 4px solid #fff;
+        box-shadow: var(--sombra-suave);
+      }
+
+      .timeline-item:nth-child(even) .timeline-dot {
+        left: -13px;
+        right: auto;
+      }
+
+      .equipe-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+      .membro-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--sombra-suave);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .membro-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--sombra-media);
+      }
+
+      .membro-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-bottom: 3px solid var(--cor-primaria);
+      }
+
+      .membro-info {
+        padding: 25px;
+      }
+
+      .membro-info h3 {
+        color: var(--cor-primaria);
+        margin-bottom: 5px;
+        font-size: 1.4rem;
+      }
+
+      .membro-cargo {
+        color: var(--cor-secundaria);
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .valores-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .valor-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: var(--sombra-suave);
+        transition: transform 0.3s ease;
+      }
+
+      .valor-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .valor-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          var(--cor-primaria),
+          var(--cor-secundaria)
+        );
+        color: white;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        margin: 0 auto 20px;
+      }
+
+      .valor-card h3 {
+        color: var(--cor-primaria);
+        margin-bottom: 15px;
+      }
+
+      .sobre-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("./assets/imagems/sobre.jpg") center/cover no-repeat;
+      }
+
+      @media (max-width: 992px) {
+        .valores-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .timeline::before {
+          left: 30px;
+        }
+
+        .timeline-item {
+          width: 100%;
+          padding-left: 80px;
+          padding-right: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+          justify-content: flex-end;
+          padding-left: 80px;
+          padding-right: 0;
+        }
+
+        .timeline-dot {
+          left: 16px;
+          right: auto;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+          left: 16px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+          border-right: none;
+          border-left: 5px solid var(--cor-primaria);
+        }
+
+        .valores-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>ConsultPro</h1>
+          <p class="tagline">Consultoria Especializada</p>
+        </div>
+        <nav class="nav-menu">
+          <button class="menu-toggle" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html" class="active">Sobre Nós</a></li>
+            <li><a href="contato.html" class="btn-destaque">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero sobre-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Nossa História</h2>
+          <p>
+            Conheça a trajetória, valores e a equipe por trás do sucesso da
+            ConsultPro ao longo dos últimos 10 anos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-historia">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <h2>Nossa Trajetória</h2>
+          <p>Uma década de compromisso com o sucesso dos nossos clientes</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2015</span>
+              <h3>Fundação da ConsultPro</h3>
+              <p>
+                A ConsultPro foi fundada por Maria Oliveira e João Silva, dois
+                experientes consultores de negócios com a visão de oferecer
+                soluções personalizadas e inovadoras para empresas brasileiras.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2017</span>
+              <h3>Expansão e Novos Serviços</h3>
+              <p>
+                Após dois anos de crescimento constante, expandimos nosso
+                portfólio de serviços e contratamos especialistas em áreas como
+                gestão de pessoas e marketing digital.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2019</span>
+              <h3>Abertura do Primeiro Escritório Regional</h3>
+              <p>
+                Com o aumento da demanda, inauguramos nosso primeiro escritório
+                regional em São Paulo, ampliando nossa capacidade de atender
+                clientes em todo o país.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2021</span>
+              <h3>Prêmio de Excelência em Consultoria</h3>
+              <p>
+                Fomos reconhecidos com o prêmio "Excelência em Consultoria
+                Empresarial", destacando nossa metodologia inovadora e os
+                resultados alcançados pelos nossos clientes.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h3>Inovação Digital</h3>
+              <p>
+                Lançamos nossa plataforma digital de consultoria, permitindo
+                atendimento remoto e expandindo nossa capacidade de atender
+                empresas em todo o Brasil e América Latina.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2025</span>
+              <h3>10 Anos de Sucesso</h3>
+              <p>
+                Celebramos uma década de existência com mais de 500 projetos
+                concluídos com sucesso e uma equipe de 50 consultores
+                especializados em diferentes áreas.
+              </p>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-valores">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <h2>Nossos Valores</h2>
+          <p>Os princípios que guiam nossas ações e decisões</p>
+        </div>
+
+        <div class="valores-grid">
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Ética e Transparência</h3>
+            <p>
+              Acreditamos que a transparência e a ética são fundamentais para
+              construir relacionamentos de confiança duradouros com nossos
+              clientes e parceiros.
+            </p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Inovação Constante</h3>
+            <p>
+              Buscamos continuamente novas metodologias e ferramentas para
+              oferecer soluções inovadoras que impulsionem o crescimento dos
+              nossos clientes.
+            </p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Compromisso com Resultados</h3>
+            <p>
+              Nosso trabalho é focado em entregar resultados mensuráveis e
+              sustentáveis que gerem valor real para as organizações.
+            </p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Colaboração e Trabalho em Equipe</h3>
+            <p>
+              Acreditamos que os melhores resultados surgem da colaboração entre
+              equipes diversas e multidisciplinares.
+            </p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Aprendizado Contínuo</h3>
+            <p>
+              Investimos no desenvolvimento contínuo dos nossos consultores para
+              garantir a excelência em todas as nossas entregas.
+            </p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Responsabilidade Social</h3>
+            <p>
+              Comprometemo-nos a contribuir positivamente com a sociedade e a
+              promover práticas sustentáveis em todas as nossas atividades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-equipe">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <h2>Nossa Equipe</h2>
+          <p>
+            Conheça os especialistas por trás dos nossos projetos de sucesso
+          </p>
+        </div>
+
+        <div class="equipe-grid">
+          <div class="membro-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/76.jpg"
+              alt="Maria Oliveira"
+              class="membro-img"
+            />
+            <div class="membro-info">
+              <h3>Maria Oliveira</h3>
+              <p class="membro-cargo">CEO e Fundadora</p>
+              <p>
+                Com mais de 20 anos de experiência em consultoria estratégica,
+                Maria fundou a ConsultPro com a visão de oferecer consultoria de
+                excelência para empresas de todos os portes.
+              </p>
+            </div>
+          </div>
+
+          <div class="membro-card">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="João Silva"
+              class="membro-img"
+            />
+            <div class="membro-info">
+              <h3>João Silva</h3>
+              <p class="membro-cargo">Diretor de Operações</p>
+              <p>
+                Especialista em otimização de processos e gestão operacional,
+                João contribui para transformar estratégias em resultados
+                concretos para os clientes.
+              </p>
+            </div>
+          </div>
+
+          <div class="membro-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/33.jpg"
+              alt="Ana Santos"
+              class="membro-img"
+            />
+            <div class="membro-info">
+              <h3>Ana Santos</h3>
+              <p class="membro-cargo">Diretora de Gestão de Pessoas</p>
+              <p>
+                Com formação em psicologia organizacional, Ana lidera nossa
+                equipe de consultores em gestão de talentos e desenvolvimento
+                organizacional.
+              </p>
+            </div>
+          </div>
+
+          <div class="membro-card">
+            <img
+              src="https://randomuser.me/api/portraits/men/45.jpg"
+              alt="Carlos Mendes"
+              class="membro-img"
+            />
+            <div class="membro-info">
+              <h3>Carlos Mendes</h3>
+              <p class="membro-cargo">Especialista em Marketing Digital</p>
+              <p>
+                Carlos traz mais de 15 anos de experiência em marketing e
+                vendas, ajudando empresas a expandir sua presença digital e
+                aumentar conversões.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Vamos trabalhar juntos?</h2>
+          <p>
+            Entre em contato conosco para discutir como podemos ajudar sua
+            empresa a alcançar os próximos níveis de sucesso.
+          </p>
+          <a href="contato.html" class="btn-destaque">Fale Conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>ConsultPro</h3>
+            <p>Soluções de consultoria que transformam negócios</p>
+            <div class="footer-social-media">
+              <h4>Siga-nos</h4>
+              <div class="footer-social-icons">
+                <a
+                  href="https://facebook.com/consultpro"
+                  class="footer-social-icon"
+                  aria-label="Facebook"
+                >
+                  <img src="assets/icones/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://instagram.com/consultpro"
+                  class="footer-social-icon"
+                  aria-label="Instagram"
+                >
+                  <img src="assets/icones/instagram.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://wa.me/5511999999999"
+                  class="footer-social-icon"
+                  aria-label="WhatsApp"
+                >
+                  <img src="assets/icones/whatsapp.svg" alt="WhatsApp" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-servicos">
+            <h4>Nossos Serviços</h4>
+            <ul>
+              <li>
+                <a href="servicos.html#estrategia">Consultoria Estratégica</a>
+              </li>
+              <li><a href="servicos.html#gestao">Gestão de Pessoas</a></li>
+              <li>
+                <a href="servicos.html#processos">Otimização de Processos</a>
+              </li>
+              <li><a href="servicos.html#marketing">Marketing e Vendas</a></li>
+              <li>
+                <a href="servicos.html#tecnologia">Transformação Digital</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ConsultPro. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/sobre-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+.hero-section {
+  padding: 5rem 0;
+  background-color: var(--tertiary);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.accent-text {
+  color: var(--primary-light);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-section .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.5);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 2rem;
+}
+
+.hero-section .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 2rem;
+}
+
+.hero-section .btn-outline:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+/* A imagem agora é um background, código removido */
+
+.hero-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  flex: 1;
+  min-width: 250px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--hover-transition);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  background-color: var(--white);
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+}
+
+.feature-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .hero-image {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 6rem 0 3rem;
+    background-position: 70% center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .feature {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-content {
+    padding: 2rem 0;
+  }
+
+  .hero-text {
+    max-width: 600px;
+  }
+}

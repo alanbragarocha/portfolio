@@ -1,0 +1,164 @@
+.depoimentos-section {
+  background-color: var(--bg-section);
+  background-image: var(--gradient-primary);
+  padding: 5rem 0;
+}
+
+.depoimentos-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.depoimentos-carousel {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.depoimento-slides {
+  position: relative;
+  height: 350px;
+}
+
+.depoimento-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.depoimento-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.depoimento-texto {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 4rem;
+  color: var(--primary-light);
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.depoimento-texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.estrelas {
+  margin-bottom: 1.5rem;
+}
+
+.estrela {
+  color: var(--gray-light);
+  font-size: 1.2rem;
+  margin-right: 3px;
+}
+
+.estrela.filled {
+  color: var(--warning);
+}
+
+.depoimento-autor {
+  display: flex;
+  align-items: center;
+}
+
+.autor-foto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  background-size: cover;
+  background-position: center;
+}
+
+.autor-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.autor-info span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.depoimentos-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  background-color: var(--white);
+  border: 1px solid var(--gray-light);
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.nav-button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.depoimentos-dots {
+  display: flex;
+  margin: 0 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--gray-light);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary);
+  transform: scale(1.3);
+}

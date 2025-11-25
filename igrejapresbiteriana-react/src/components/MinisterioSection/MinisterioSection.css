@@ -1,0 +1,387 @@
+/* Ministério Section Styles */
+.ministerio {
+  padding: var(--space-xxl) 0;
+  background: #D3D3D3;
+}
+
+/* Removendo a regra global que estava afetando a visualização dos ícones */
+
+.section-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  color: var(--gray);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.ministerio-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: stretch;
+}
+
+/* Visão e Missão */
+.ministerio-visao-content {
+  padding: var(--space-md) var(--space-sm);
+  color: var(--text-color);
+}
+
+.ministerio-icon {
+  width: 50px;
+  height: 50px;
+  background: #4CAF50;  /* Cor verde */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  /* Cor do ícone */
+  font-size: 1.3rem;
+  margin-right: var(--space-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.ministerio-icon i {
+  color: white !important;  /* Garantindo que o ícone seja branco e visível */
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.ministerio-visao-content p {
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: var(--space-md);
+}
+
+.ministerio-visao-content ol {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.ministerio-visao-content ol li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Áreas de Atuação */
+.ministerio-atuacao {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Removendo o grid para usar o layout de coluna do Material UI */
+.ministerio-areas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+.area-item {
+  background: var(--white);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--space-xl);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-top: 3px solid var(--color-accent);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.area-icon {
+  width: 50px;
+  height: 50px;
+  background: #4CAF50;  /* Cor verde */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;  /* Cor do ícone */
+  position: relative;
+  z-index: 1;
+}
+
+.area-icon i {
+  color: white !important;  /* Garantindo que o ícone seja branco e visível */
+  font-size: 1.3rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-bottom: var(--space-md);
+}
+
+.area-item h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  font-family: "Playfair Display", serif;
+}
+
+.area-item p {
+  color: var(--gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.area-content {
+  margin-top: 1rem;
+}
+
+.area-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilos para os detalhes dos ministérios */
+.area-details {
+  margin-top: var(--space-md);
+  padding-left: var(--space-md);
+}
+
+.area-details li {
+  margin-bottom: var(--space-sm);
+  list-style-type: disc;
+  line-height: 1.5;
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .ministerio {
+    padding: var(--space-lg) 0;
+  }
+
+  .ministerio-container {
+    gap: var(--space-md);
+  }
+
+  .area-details {
+    padding-left: var(--space-sm);
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .ministerio-visao-content {
+    padding: var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .ministerio {
+    padding: var(--space-md) 0;
+  }
+
+  .ministerio-visao {
+    padding: var(--space-md);
+  }
+
+  .area-item {
+    padding: var(--space-md);
+  }
+
+  .ministerio-icon,
+  .area-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    background: #4CAF50;  /* Mantendo a cor verde consistente no responsivo */
+    color: white;  /* Garantindo que os ícones sejam visíveis no responsivo */
+  }
+
+  .ministerio-icon i,
+  .area-icon i {
+    color: white;  /* Garantindo que os ícones sejam visíveis no responsivo */
+  }
+
+  .ministerio-visao h3 {
+    font-size: 1.3rem;
+  }
+
+  .area-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .area-details {
+    padding-left: var(--space-xs);
+  }
+
+  .area-details li {
+    margin-bottom: var(--space-xs);
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para a seção de missões */
+.missoes-section {
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1.5rem;
+}
+
+.missoes-section h4 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.missoes-section h4:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.missoes-section blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-style: italic;
+  color: var(--text-color);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.missoes-section p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .missoes-section h4 {
+    font-size: 1.3rem;
+  }
+
+  .missoes-section blockquote {
+    padding: 0.8rem 1.2rem;
+    margin: 1.2rem 0;
+  }
+}
+
+/* Estilos do Accordion do Material UI */
+.ministerio-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mui-accordion {
+  margin-bottom: 1rem !important;
+  border-radius: var(--border-radius) !important;
+  background-color: var(--white) !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.mui-accordion:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.mui-accordion.Mui-expanded {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  border-left: 4px solid var(--primary-color) !important;
+}
+
+.mui-accordion-summary {
+  padding: 0 1.2rem !important;
+  min-height: 64px !important;
+}
+
+/* Removendo as classes padrão do Material UI */
+.mui-accordion-summary .MuiAccordionSummary-content,
+.mui-accordion-summary .MuiAccordionSummary-contentGutters {
+  all: unset !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 12px 0 !important;
+  width: 100%;
+}
+
+/* Removendo a classe específica css-yfrx4k */
+.css-yfrx4k-MuiAccordionSummary-content {
+  all: unset !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.mui-accordion-summary:hover {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+.mui-accordion-summary.Mui-expanded {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.accordion-title {
+  flex-grow: 1 !important;
+  margin: 0 1rem !important;
+  color: var(--text-color) !important;
+  font-size: 1.2rem !important;
+  font-family: "Playfair Display", serif !important;
+}
+
+/* Estilo especial para o título do primeiro acordeão (Visão e Missão) */
+.mui-accordion:first-of-type .accordion-title {
+  font-size: 1.5rem !important;
+  color: var(--primary-color) !important;
+}
+
+.mui-accordion-summary .MuiSvgIcon-root {
+  color: #4CAF50 !important;  /* Cor verde */
+}
+
+.mui-accordion .MuiAccordionDetails-root {
+  padding: 0 1.2rem 1.2rem !important;
+}
+
+.area-description {
+  color: var(--gray) !important;
+  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .mui-accordion-summary {
+    padding: 0 1rem !important;
+  }
+
+  .mui-accordion .MuiAccordionDetails-root {
+    padding: 0 1rem 1rem !important;
+  }
+}
+
+/* Estilos adicionais para garantir que os ícones FontAwesome sejam exibidos corretamente */
+.mui-accordion .fas,
+.mui-accordion-summary .fas {
+  color: white !important;  /* Tornando o ícone branco para contraste com o fundo verde */
+  font-size: 1.3rem !important;
+  display: inline-block !important;
+}
