@@ -73,7 +73,7 @@
 
 .nav-menu-desktop a:hover {
   color: var(--accent-color);
-  background: rgba(var(--accent-color), 0.1);
+  background: rgba(var(--accent-color-rgb), 0.1);
 }
 
 .nav-menu-desktop a.active::after {

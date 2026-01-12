@@ -12,6 +12,7 @@
   --secondary-bg-color-rgb: 30, 30, 36;
   --primary-border-color: #28292e;
   --accent-color: #ffc710;
+  --accent-color-rgb: 255, 199, 16;
   --accent-color-hover: #e0b00f;
   --accent-color-light: rgba(255, 199, 16, 0.1);
   --title-color: #ffc710;
@@ -58,6 +59,7 @@
   --secondary-bg-color-rgb: 240, 240, 240;
   --primary-border-color: #e0e0e0;
   --accent-color: #e09800;
+  --accent-color-rgb: 224, 152, 0;
   --accent-color-hover: #c98700;
   --accent-color-light: rgba(224, 152, 0, 0.1);
   --title-color: #e09800;

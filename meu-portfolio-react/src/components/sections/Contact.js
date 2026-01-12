@@ -12,11 +12,37 @@ function Contact() {
       React.createElement(
         'p',
         { className: 'section-description' },
-        'Estou disponível para serviços e novas conexões. Entre em contato!'
+        'Estou disponível para serviços e novas conexões. Entre em contato pelo WhatsApp!'
       ),
       React.createElement(
         'div',
         { className: 'contact__layout' },
+        React.createElement(
+          'div',
+          { className: 'contact__whatsapp' },
+          React.createElement(
+            'div',
+            { className: 'whatsapp-content' },
+            React.createElement('i', { className: 'fab fa-whatsapp' }),
+            React.createElement('h3', null, 'Entre em contato pelo WhatsApp'),
+            React.createElement(
+              'p',
+              null,
+              'Clique no botão abaixo para iniciar uma conversa'
+            ),
+            React.createElement(
+              'a',
+              {
+                href: 'https://wa.me/message/LXW7SHFJSZKZG1',
+                target: '_blank',
+                rel: 'noopener noreferrer',
+                className: 'btn btn--whatsapp',
+              },
+              React.createElement('i', { className: 'fab fa-whatsapp' }),
+              React.createElement('span', null, 'Enviar Mensagem no WhatsApp')
+            )
+          )
+        ),
         React.createElement(
           'div',
           { className: 'contact__info' },

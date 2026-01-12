@@ -61,7 +61,7 @@
   background: var(--accent-color);
   color: var(--primary-color);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(var(--accent-color), 0.3);
+  box-shadow: 0 4px 12px rgba(var(--accent-color-rgb), 0.3);
   border-color: var(--accent-color);
 }
 
@@ -98,7 +98,7 @@
 
 .footer__menu a:hover {
   color: var(--accent-color);
-  background: rgba(var(--accent-color), 0.1);
+  background: rgba(var(--accent-color-rgb), 0.1);
 }
 
 /* Bottom Section */
