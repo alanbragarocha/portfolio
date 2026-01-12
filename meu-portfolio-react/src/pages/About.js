@@ -69,7 +69,7 @@ function About() {
             "div",
             { className: "about__image" },
             React.createElement("img", {
-              src: "/images/avatar.svg",
+              src: "/images/selfie.webp",
               alt: "Foto de Alan Braga",
               loading: "lazy",
             })
